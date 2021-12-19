@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+a {
+    color: #0ea5e9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.title-font {
+    font-family: 'Cookie', cursive;
+}

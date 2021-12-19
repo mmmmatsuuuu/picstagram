@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picstagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+            }
+          }
+        }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen overflow-hidden bg-gray-100">
+    <header class="sticky top-0 border-t border-b bg-white flex justify-center items-center p-2">
+        <h1 class="title-font text-5xl bg-gradient-to-r from-yellow-500 to-pink-500 bg-clip-text text-transparent">Picstagram</h1>
+    </header>
+    <a class="fixed top-0 right-0 flex justify-center items-center p-2" href="https://sh.higo.ed.jp/amakusa/">
+        <img class="w-12" src="./src/home_black_24dp.svg">
+    </a>
+
+    <main class="overflow-y-scroll" style="height: calc(100vh - 6rem);">
+        <div id="searching" class="w-full h-full flex flex-col justify-center items-center">
+            <p class="text-2xl bg-gradient-to-r from-yellow-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
+                ただ今読み込み中...
+            </p>
+            <p class="p-4">
+                生徒が授業で作成した学校の問題を解決するためのピクトグラムです。<br>
+                生徒が作成したものからランダムで、12作品が読みこまれます。<br>
+                毎回読み込まれる作品は違いますので何度でもお越しください。<br>
+            </p>
+        </div>
+        <div id="searched">
+
+        </div>
+    </main>
+
+    <footer class="sticky bottom-0 border-t border-b bg-white flex justify-center items-center p-2">
+        <p>2021 - 2022 熊本県立天草高等学校　情報科</p>
+    </footer>
+
+    <script src="./js/fetch.js"></script>
+</body>
+</html>
