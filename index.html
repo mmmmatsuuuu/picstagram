@@ -25,7 +25,7 @@
     </a>
 
     <main class="overflow-y-scroll" style="height: calc(100vh - 6rem);">
-        <div id="searching" class="w-full h-full flex flex-col justify-center items-center">
+        <div id="searching" class="max-w-sm md:max-w-md m-auto h-full flex flex-col justify-center items-center">
             <p class="text-2xl bg-gradient-to-r from-yellow-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
                 ただ今読み込み中...
             </p>
@@ -34,16 +34,36 @@
                 生徒が作成したものからランダムで、12作品が読みこまれます。<br>
                 毎回読み込まれる作品は違いますので何度でもお越しください。<br>
             </p>
+            <p class="p-4">
+                また、掲載されているピクトグラムは生徒が付与している
+                <a class="text-blue-400 hover:underline">CCライセンス</CC:ie></a>のもとで自由に利用することができます。
+            </p>
         </div>
         <div id="searched">
 
         </div>
     </main>
 
+    <div class="fixed bottom-12 right-0 p-2 z-50 flex justify-end items-end">
+        <div id="info" class="hidden max-w-sm m-auto rounded-md bg-white shadow-md">
+            <p class="p-4">
+                生徒が授業で作成した学校の問題を解決するためのピクトグラムです。<br>
+                生徒が作成したものからランダムで、12作品が読みこまれます。<br>
+                毎回読み込まれる作品は違いますので何度でもお越しください。<br>
+            </p>
+            <p class="p-4">
+                また、掲載されているピクトグラムは生徒が付与している
+                <a class="text-blue-400 hover:underline">CCライセンス</CC:ie></a>のもとで自由に利用することができます。
+            </p>
+        </div>
+        <button id="info-btn" onclick="hundleShowInfo()">
+            <img src="./src/info_black_24dp.svg" class="w-12 bg-white rounded-full shadow-md hover:shadow-lg">
+        </button>
+    </div>
     <footer class="sticky bottom-0 border-t border-b bg-white flex justify-center items-center p-2">
         <p>2021 - 2022 熊本県立天草高等学校　情報科</p>
     </footer>
-
     <script src="./js/fetch.js"></script>
+    <script src="./js/btn.js"></script>
 </body>
 </html>
